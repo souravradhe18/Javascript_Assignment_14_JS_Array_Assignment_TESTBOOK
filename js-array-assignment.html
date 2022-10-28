@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Array</title>
+    <style>
+        h1 {
+            font-family: Impact, sans-serif;
+            color: #CE5937;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Array</h2>
+    <p id="exam"></p>
+    <script>
+        //Creating an array
+        const cars = ["BMW", "Audi", "Scoda", "Benz"];
+        let arr = "<ul>";
+        //looping the array
+        cars.forEach(myFun);
+        arr += "</ul>";
+        document.getElementById("exam").innerHTML = arr;
+        function myFun(element) {
+            arr += "<li>" + element + "</li>";
+        }
+    </script>
+</body>
+
+</html>
